@@ -1,0 +1,5 @@
+StringMethods,
+Write a Java program to replace all the 'd' characters with 'f' characters. Go to the editor
+EXAMPLE:
+    INPUT     : The quick brown fox jumps over the lazy dog.
+  OUTPUT :  The quick brown fox jumps over the lazy fog

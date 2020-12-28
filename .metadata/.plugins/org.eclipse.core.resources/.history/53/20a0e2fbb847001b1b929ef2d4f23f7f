@@ -1,0 +1,38 @@
+package javadev.jdbctutorial;
+
+import java.sql.*;
+
+public class CallableStatement01 {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521/xe", "hr", "oracle");
+		
+		Statement st = con.createStatement();
+		
+		//Create a function which adds 2 numbers and returns the result, name, the function 
+		
+		String sql1 = "CREATE OR REPLACE FUNCTION addf (num1 NUMBER, num2 NUMBER)\r\n"
+				+ "RETURN NUMBER IS \r\n"
+				+ "BEGIN \r\n"
+				+ "    RETURN num1+num2;\r\n"
+				+ "END;";
+		
+		st.execute(sql1);
+		System.out.println("addf function is created");
+		
+		CallableStatement cst1 = con.prepareCall("{? = call addf(?,?)}");
+		
+		cst1.registerOutParameter(1, Types.INTEGER);
+		cst1.setInt(2, 10);
+		cst1.setInt(3, 20);
+		
+		cst1.execute();
+		
+		System.out.println("The sum is : " +cst1.getInt(1));
+		
+	}
+
+}

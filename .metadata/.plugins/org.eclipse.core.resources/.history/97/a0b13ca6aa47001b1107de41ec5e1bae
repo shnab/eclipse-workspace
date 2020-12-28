@@ -1,0 +1,16 @@
+package javadev.jdbctutorial;
+
+import java.sql.*;
+
+public class PreparedStatement01 {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "oracle");
+
+		Statement st = con.createStatement();
+	}
+
+}
