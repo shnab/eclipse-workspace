@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\gebruiker\eclipse-workspace\hibernatedemo"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\hibernatetutoring"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\jdbctutorial"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\techproedfall2020\src\javadevelopmentdtDay05\ReadingFile.java"/>
 		</list>
@@ -15,7 +18,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="All Catalogs"/>
+		<item key="catalog" value="internal"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -27,13 +30,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="javadev.jdbctutorial"/>
+			<item value="com.hibernate.demohibernate"/>
+			<item value="com.hibernate.hibernatetutorial"/>
 		</list>
 		<list key="groupId">
-			<item value="javadev"/>
+			<item value="com.hibernate"/>
 		</list>
 		<list key="artifactId">
-			<item value="jdbctutorial"/>
+			<item value="demohibernate"/>
+			<item value="hibernatetutorial"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -69,5 +74,19 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="com.hibernate"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="demohibernate"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="0.0.1-SNAPHOT"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
 	</section>
 </section>
