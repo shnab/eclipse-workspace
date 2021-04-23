@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\gebruiker\eclipse-workspace\junit5tutorial\src\test\java\junit5tutorial\C04SortArraysInASpecifiedTimeTest.java"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\hibernatedemo"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\hibernatetutoring"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\jdbctutorial"/>
@@ -30,15 +31,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.hibernate.demohibernate"/>
-			<item value="com.hibernate.hibernatetutorial"/>
+			<item value="com.techproed.javadevapi01"/>
 		</list>
 		<list key="groupId">
-			<item value="com.hibernate"/>
+			<item value="com.techproed"/>
 		</list>
 		<list key="artifactId">
-			<item value="demohibernate"/>
-			<item value="hibernatetutorial"/>
+			<item value="javadevapi01"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -87,6 +86,30 @@
 		</list>
 		<list key="repositoryUrl">
 			<item value=""/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\gebruiker\Desktop\JAVA\JAVA SLIDES OT NOTES OF SULEYMAN ALPTEKIN\javadevapi01-main\javadevapi01-main"/>
+			<item value="https://github.com/salptekin/javadevapi01.git"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\apitodeploy"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\apiSecureToDeploy-main"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\RENTACAR_COMBINE-master"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\techproed"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\restapi\restapi"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\javadevapi01-main"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\techproedsummer2020turkish-master"/>
+			<item value="C:\Users\gebruiker\Desktop\JAVA\MUHAMMED RIYAZ\bankofstatesbackend-main\bankofstatesbackend-main"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\springmvctutorial"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="api"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 </section>

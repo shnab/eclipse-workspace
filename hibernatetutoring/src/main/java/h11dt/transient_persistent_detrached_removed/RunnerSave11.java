@@ -25,7 +25,7 @@ public class RunnerSave11 {
         student.setName("Ali Can");
         student.setMathGrade(97);
         
-        //Persistent object: if you associate an object with a session, 
+        //Persistent object: if you associate an object with a Hibernate session, 
         //then it is called "persistant object"
         session.save(student);
         
@@ -52,7 +52,7 @@ public class RunnerSave11 {
 		 Removed Object: If you delete a record from DB by using delete() or remove() or HQL Query
 		                 then the object is called "Removed Object"
 		                 Note: Removed Objects exist in Java, do not exist in Database
-		                 Note: Garbage Collector may destroy Transient, Detache, and Removed objects
+		                 Note:Java is garbage collector.  Garbage Collector may destroy Transient, Detache, and Removed objects
          */
         
         session2.delete(student2);

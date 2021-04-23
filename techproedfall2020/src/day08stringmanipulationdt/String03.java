@@ -7,30 +7,33 @@ public class String03 {
 	public static void main(String[] args) {
 		
 		/*
-		 Ask user to enter password, if the password is okay for the following conditions output will be
-        “Your password is created successfully.” 
-        If the password is not okay for any of the following conditions output will be 
-        “Enter a new password according to the give conditions”
-						1.First letter must be uppercase
-						2.Last letter must be lowercase
-						3.Password must contain at least 6 characters
+		 Ask user to enter a password
+		 1)Remove all spaces from the password from beginning and ending
+		 2)Make the first character uppercase ‘A’ 
+		 3)Make the last 2 characters ‘*’
+		 4)If the password has less than 6 characters add ‘e’ after the first character to make the length more than 5 
+		 5)Then give the password to the user
 		 */
 		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter your password");
-		String pwd = scan.nextLine();
-	
-		if((pwd.charAt(0)>='A' && pwd.charAt(0)<='Z') && 
-				(pwd.charAt(pwd.length()-1)>='a' && pwd.charAt(pwd.length()-1)<='z') && 
-				(pwd.length()>=6)) {
-			System.out.println("Your password is created successfully.");
-		} else {
-			System.out.println("Enter a new password according to the give conditions");
-		}
-
 		
-
-		scan.close();
-	}
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter your password");
+		String pwd = scan.nextLine().trim();
+		
+		if(pwd.length()<6) {
+			System.out.println("PLease enter at least 6 characters");
+		} else {
+			//in replace method you can use charAt, substring instead of a specific character
+			//pwd = pwd.replace(pwd.charAt(0),'A'); // changing permanent oluyor, assign olunca.. update'i memory ye put etmek icin assing yapiyoruz. Onenmli
+			//pwd = pwd.replace(pwd.substring(pwd.length()-2),"**");
+			
+			pwd = "A" + pwd;
+			pwd = pwd.substring(0, pwd.length()-2)+ "**";
+			System.out.println(pwd);
+			
+			}
+		}
+		
 
 }

@@ -15,4 +15,13 @@
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
+	<section name="conditionHistory">
+		<item key="conditionHistoryEntry_0" value="i==30"/>
+		<item key="conditionHistoryEntryCount" value="4"/>
+		<item key="conditionHistoryEntry_1" value="i==40"/>
+		<item key="conditionHistoryEntry_2" value="i=20"/>
+		<item key="conditionHistoryEntry_3" value="number=10"/>
+	</section>
+	<section name="expressionHistory">
+	</section>
 </section>

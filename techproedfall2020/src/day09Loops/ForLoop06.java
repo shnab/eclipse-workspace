@@ -10,7 +10,7 @@ public class ForLoop06 {
 		 1)ask user to enter a positive integer
 		 2) Create and print the following image on the console
 		 
-		 	*
+		    *
 		   * *
 		  * * *
 		 * * * *
@@ -24,6 +24,7 @@ public class ForLoop06 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter a integer to create triangle");
 		int n = scan.nextInt();
+		
 		
 		
 //		for(int i=1; i<=n; i++) {

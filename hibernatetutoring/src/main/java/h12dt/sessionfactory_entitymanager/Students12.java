@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Students12 {
+public class Students12 { //this is simple POJO class
 	
 	@Id
 	private int id;

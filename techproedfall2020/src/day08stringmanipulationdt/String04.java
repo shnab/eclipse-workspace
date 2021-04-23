@@ -5,35 +5,45 @@ import java.util.Scanner;
 public class String04 {
 
 	public static void main(String[] args) {
-		
+
+
 		/*
-		 Ask user to enter a password
-		 1)Remove all spaces from the password from beginning and ending
-		 2)Make the first character uppercase ‘A’ 
-		 3)Make the last 2 characters ‘*’
-		 4)If the password has less than 6 characters add ‘e’ after the first character to make the length more than 5 
-		 5)Then give the password to the user
-		 */
-		
+		Ask user ta enter his/her first name, last name and Social Security Number. 
+        Then type a program which makes 
+        the initials of the first name and the last name in uppercase, 
+        Other characters will be in lowercase.
+        All characters except last 4 characters of the Social Security Number “*”
+                         For example; Suleyman Alptekin *****5678 (9 digits)
+		*/	
 		
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your firstname");
+		String fn = scan.nextLine().trim();
+		System.out.println("Enter your lastname");
+		String ln = scan.nextLine().trim();
 		
-		System.out.println("Enter your password");
-		String pwd = scan.nextLine().trim();
-		
-		if(pwd.length()<6) {
-			System.out.println("PLease enter at least 6 characters");
-		} else {
-			//in replace method oyou can use charAt, substring instead of a specific character
-			//pwd = pwd.replace(pwd.charAt(0),'A'); // changing permanent oluyor, assign olunca.. update'i memory ye put etmek icin assing yapiyoruz. Onenmli
-			//pwd = pwd.replace(pwd.substring(pwd.length()-2),"**");
-			
-			pwd = "A" + pwd;
-			pwd = pwd.substring(0, pwd.length()-2)+ "**";
-			System.out.println(pwd);
-			
-			}
-		}
-		
+		System.out.println("Enter your SSN");
+		String ssn = scan.nextLine().trim();
 
-}
+		
+		fn = fn.substring(0, 1).toUpperCase() + fn.substring(1).toLowerCase();
+		System.out.println(fn);
+		
+		ln = ln.substring(0, 1).toUpperCase() + ln.substring(1).toLowerCase();
+		System.out.println(ln);
+		
+		ssn= "*****" + ssn.substring(ssn.length()-4);
+		System.out.println(ssn);
+		
+		//System.out.println(fn.trim().substring(0, 1).toUpperCase() + fn.trim().substring(1).toLowerCase());
+		//System.out.println(ln.trim().substring(0, 1).toUpperCase() + ln.trim().substring(1).toLowerCase());
+		// LN kismini sildi
+		System.out.print(fn.trim().substring(0, 1).toUpperCase() + fn.trim().substring(1).toLowerCase() + " ");
+		
+		System.out.print(ln.trim().substring(0, 1).toUpperCase() + ln.trim().substring(1).toLowerCase() + " ");
+		
+		System.out.println("*****" + ssn.trim().substring(ssn.trim().length()-4));
+	
+	}
+	
+	}

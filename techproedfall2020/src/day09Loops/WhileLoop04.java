@@ -22,8 +22,8 @@ public class WhileLoop04 {
 		
 		int sum = 0;
 		while(n!=0) {
-			sum = sum + n%10;
-			n = n / 10;
+			sum = sum + n%10; //123 icin 3
+			n = n / 10; //123 icin 12/10 ==> 2
 	}
 		System.out.println(sum);
 		scan.close();

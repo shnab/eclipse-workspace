@@ -20,11 +20,12 @@ public class ForLoop07 {
 		System.out.println("Enter an integer to create triangle");
 		int n = scan.nextInt();
 		
+		
 		for(int i=n; i>0; i--) {
-			for(int j=0; j<n-i; j++) {
+			for(int j=0; j<n-i; j++) { //space
 				System.out.print(" ");
 			}
-			for(int k=n; k>n-i; k--) {
+			for(int k=n; k>n-i; k--) { // asterix
 				System.out.print("* ");
 			}
 			System.out.println();	

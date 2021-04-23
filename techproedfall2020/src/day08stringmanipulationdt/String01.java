@@ -20,7 +20,7 @@ public class String01 {
 		//If you use the index greater than the length you will get Exception(like an error)
 		//System.out.println(s1.substring(15));
 		
-		//First index cannot be greater tha second index in substring()
+		//First index cannot be greater than second index in substring()
 		//System.out.println(s1.substring(5, 2));
 		
 		/*

@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=junit5tutorial/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;junit5tutorial{C01StringModifier.java[C01StringModifier" modifiers="1" timestamp="1610916607177"/>
+    <typeInfo handle="=junit5tutorial/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;junit5tutorial{C02FirstTwoLastTwoCharsSame.java[C02FirstTwoLastTwoCharsSame" modifiers="1" timestamp="1610918095286"/>
+    <typeInfo handle="=junit5tutorial/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;junit5tutorial{C03CompareArrayElements.java[C03CompareArrayElements" modifiers="1" timestamp="1611156471094"/>
+    <typeInfo handle="=junit5tutorial/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;junit5tutorial{C04SortArraysInASpecifiedTime.java[C04SortArraysInASpecifiedTime" modifiers="1" timestamp="1611157989541"/>
+</typeInfoHistroy>

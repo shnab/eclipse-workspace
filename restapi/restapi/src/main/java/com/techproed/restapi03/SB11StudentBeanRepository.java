@@ -1,0 +1,10 @@
+package com.techproed.restapi03;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository																		//id belirtmek icin Long yazdik
+public interface SB11StudentBeanRepository extends JpaRepository<SB10StudentBean, Long>{
+	
+
+}

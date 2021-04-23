@@ -24,7 +24,7 @@ public class WhileLoop05 {
 		int i = 1;  //II
 		
 		while(i<=n) { //III
-			if(n%i==0) {
+			if(n%i==0) {//burada n in bolenleri tek tek aliniyor,  12 ==> 1 2 3 4 6 12 
 				System.out.print(i + " ");
 			}
 			i++;//IV

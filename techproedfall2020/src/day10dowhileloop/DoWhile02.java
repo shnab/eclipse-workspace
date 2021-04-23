@@ -23,11 +23,29 @@ public class DoWhile02 {
 		 the number of digits and the number of others by using do-while loop
 		*/
 		String s = "123456789_?!/abcdef";
-		int k = 0;
+		int k = 0; //bu index 
 		int letterCounter = 0;
 		int digitCounter = 0;
 		int figureCounter = 0;
 		
+//		do {
+//			boolean letters = s.charAt(k)>='a' && s.charAt(k)<='z';
+//			boolean digits = s.charAt(k)>=0 && s.charAt(k)<=9;
+//			boolean others = !letters && !digits;
+//			if(letters) {
+//				letterCounter++;
+//			}
+//			if(digits) {
+//				digitCounter++;
+//			} if(others) {
+//				figureCounter++;
+//			}
+//						
+//			k++;
+//			
+//		} while(k<s.length());
+		
+			
 		do {
 			boolean isLetter = (s.charAt(k)>='a'&&s.charAt(k)<='z') || (s.charAt(k)>='A'&&s.charAt(k)<='Z');
 			

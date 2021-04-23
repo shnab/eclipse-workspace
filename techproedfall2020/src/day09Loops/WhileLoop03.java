@@ -15,9 +15,21 @@ public class WhileLoop03 {
 		System.out.println("Enter an integer to calculate its factorial");
 		int n = scan.nextInt();
 		
+		
+//		int res =1;		
+//		int i =1;
+//		while(i<=n) {
+//			res = res*i;
+//			System.out.println(res);
+//			i++;
+//		}
+//		System.out.println(res);
+
+		
+		
 		int result = 1; //to store result
 		
-		int i=1; // this is flag		
+		int i=1; // this is flag ==> counter		
 		while(i<=n) {
 			result = result * i;
 			System.out.println(i + "!= " + result); //bu tek tek sayilarin degerini verdi. i koydum

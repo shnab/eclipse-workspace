@@ -24,12 +24,14 @@ public class String01 {
 		String s2 = "Learn Java earn money";
 		System.out.println(s2.concat(" Really?"));//Learn Java earn money Really?
 		System.out.println(s2.concat(".").concat(s1)); //ben yazdim
+		System.out.println(s2 + "" + "realluy");
 		
 		//3.contains() ==> boolean
 		String s3 = "Study hard stay humble";
+		//System.out.println(s3.contains('s')); ==> '' char calismaz.
 		System.out.println(s3.contains("s"));//true ==> '' char calismaz. String olmali
 		System.out.println(s3.contains("hard"));//true
-		System.out.println(s3.contains(" "));//true
+		System.out.println(s3.contains(" "));//true 
 		System.out.println(s3.contains(""));//true==> there is nothing between the characters
 		System.out.println(s3.contains("T"));//false
 		System.out.println(s3.contains(s3));//true==>itself 
@@ -42,7 +44,7 @@ public class String01 {
 		System.out.println(s4.endsWith("m"));//false
 		System.out.println(s4.endsWith("week"));//true
 		
-		//5.equals() ==> Cases are important for equals()
+		//5.equals() ==> Cases are important for equals() ==> comletely same
 		String s5 = "Fast is slow slow is fast in IT";
 		System.out.println(s5.equals("Fast is slow slow is fast in IT"));//true
 		System.out.println(s5.equals("fast is slow slow is fast in it"));//false
@@ -58,9 +60,9 @@ public class String01 {
 		System.out.println(s6.indexOf("ing"));//9 ==> For multiple characters it returns the index of first character
 		System.out.println(s6.indexOf('l'));//-1 char mumkun ==> If you look for the index of non-existing character/s it returns -1
 		System.out.println(s6.indexOf("Coding"));//-1
-		System.out.println(s6.indexOf(""));//0
+		System.out.println(s6.indexOf(""));//0 ==> for nothing we get 0
 		System.out.println(s6.indexOf(" "));//5
-		System.out.println(s6.indexOf("i", 11));//19==> 11. karakterden sonraki ilk i"nin indexini buluyot
+		System.out.println(s6.indexOf("i", 11));//19==> 11. karakterden sonraki ilk i"nin indexini buluyor
 		System.out.println(s6.indexOf('n', 6));//10
 		System.out.println(s6.indexOf("", 5));//5
 	
@@ -80,10 +82,10 @@ public class String01 {
 	   System.out.println(s6.lastIndexOf(" ")); //15
 	   
 	   
-	   //10.replace()==> we use characters remove
+	   //10.replace()==> we use characters remove // it changes characters temporaly// gecici yani tek seferlik
 	   String s7 = "Java is OOP language"; // object Oriented Programming
 	   System.out.println(s7.replace("P", "p"));//Java is OOp language
-	   System.out.println(s7.replace('a', 'A'));//JAvA is OOP lAnguAge
+	   System.out.println(s7.replace('a', 'A'));//JAvA is OOP lAnguAge ==> tum A lar degisiyor
 	   System.out.println(s7.replace(" ", "*"));//Java*is*OOP*language
 	   System.out.println(s7.replace("language", "concept"));//Java is OOP concept
 	   System.out.println(s7.replace("i", "code"));//Java codes OOP language

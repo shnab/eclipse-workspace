@@ -17,7 +17,7 @@ public class ForLoop05 {
 		
 		
 		
-		int result = 1; //for maltuplication
+		int result = 1; //for multiplication
 		
 		if(n<0) {
 			System.out.println("Factorial does not work with negative numbers");

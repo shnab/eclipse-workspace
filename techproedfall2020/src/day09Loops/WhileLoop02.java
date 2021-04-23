@@ -24,8 +24,17 @@ public class WhileLoop02 {
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter an integer to create multiplication table");
-		int n = scan.nextInt(); //n burada sabit degisken oluyor.
+		int n = scan.nextInt(); //n burada sabit degisken oluyor. 10X1 10X2
 
+		
+//		int i = 1;
+//		
+//		while(i<=n) {
+//			System.out.println(i*n);
+//			i++;
+//		}
+		
+		
 		int i=1;
 		while(i<11) {
 			System.out.println(n + "x" + i + " = " + n*i); //tek tek yazdiriyor. Icinde kullandik

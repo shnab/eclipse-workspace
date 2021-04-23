@@ -25,7 +25,7 @@ public class ForLoop02 {
 		System.out.println();
 		
 		for (int i=s.length()-1; i>=0; ) {
-			System.out.println(s.charAt(i));
+			System.out.print(s.charAt(i));
 			i--; // buraya da konulabilir
 		}
 		scan.close();
