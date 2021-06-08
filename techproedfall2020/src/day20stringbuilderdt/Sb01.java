@@ -1,5 +1,7 @@
 package day20stringbuilderdt;
 
+import java.util.Arrays;
+
 public class Sb01 {
 	
 	/*
@@ -91,20 +93,36 @@ public class Sb01 {
 		//How to get a character at  specified index
 		System.out.println(sb4.charAt(0)); // S
 		
+		//to change a character at aspecific index
+		sb4.setCharAt(2, 'x');
+		System.out.println(sb4); //Slxep les
+		
+		//to replace
+		sb4.replace(2, 3, "ABC");
+		System.out.println(sb4); //SlABCep les
+		
 		//How to add characters to a specified index
 		sb4.insert(5,  "X").insert(sb4.length()-1, "s");
-		System.out.println(sb4); // SleepX less
+		System.out.println(sb4); // SlABCXep less
 		
 		//How to reverse String (Tersine cevirme)
 		sb4.reverse();
-		System.out.println(sb4); // ssel XpeelS
+		System.out.println(sb4); // ssel peXCBAlS
 		
+		String name = "Ali Can";
+		for(int i =name.length()-1; i>=0; i--) {
+			System.out.print(name.charAt(i)); //naC ilA
+		}
+			
 		//How to convert StringBuilder to String // sonuna . (nokta) koyunca cevirdigi anlasilabiliyor
 		//ToString () is returning String because if that it cannot update the StringBuilder. I
 		//If you want to use StringBuilder as a String use method chain.
 		sb4.toString();
 		
+		System.out.println();
 		
+
+	
 	}
 	
 	public static String concat(String str) {

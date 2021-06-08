@@ -6,12 +6,13 @@ public class Static03 {
 	 Create a program which count the number of object you created
 	 */
 	
-	static int counter = 0; // herkesin update i gotmesini istiyorsaniz static yapmalisiniz
-	int age = 0; // this is instance valuable. bunlar tek tek update ediliyor. Every time Starts from beginning
+	static int counter = 0; // herkesin update i gotmesini istiyorsaniz static yapmalisiniz . Every time Starts from last value
+	int age = 0; // this is instance variable. bunlar tek tek update ediliyor. Every time Starts from beginning
 	
+	//constructor
 	public Static03() {
 		counter++;
-		age++;
+		age++; //age update edilse bile diger objectler sadece kendi alanindakini gorecek. 
 	}
 	public static void main(String[] args) {
 

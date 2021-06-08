@@ -22,6 +22,7 @@ public class Arrays01 {
 	
 			//how to create an array
 		int array1[] = new int[5]; // sayi yazilmali. Array is an object
+		int arr3[]= {1,2,3,4,4}; // buda ARRAY yazma yontemi
 		
 		//How to add an element into an array
 		array1[0] = 13;
@@ -62,7 +63,6 @@ public class Arrays01 {
 			for(int i = 0; i<c.length; i++) {
 				System.out.print(c[i] + " - ");
 			}
-	
 			
 	}
 

@@ -36,7 +36,7 @@ public class Varargs01 {
 		System.out.println(sum); //30
 	}
 	
-	public static void multiplyVarargs(String s, double... b) { // Varargs 2. sirada oluyor.
+	public static void multiplyVarargs(String s, double... b) { // Varargs SON sirada oluyor.
 		double product = 1;
 		for(double w : b) {
 			product = product * w;

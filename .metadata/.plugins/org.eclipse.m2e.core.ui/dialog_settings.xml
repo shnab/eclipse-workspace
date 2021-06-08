@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\gebruiker\eclipse-workspace\jdbc.exaxample\pom.xml"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\jdbc.exaxample"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\junit5tutorial\src\test\java\junit5tutorial\C04SortArraysInASpecifiedTimeTest.java"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\hibernatedemo"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\hibernatetutoring"/>
@@ -31,13 +33,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.techproed.javadevapi01"/>
 		</list>
 		<list key="groupId">
-			<item value="com.techproed"/>
 		</list>
 		<list key="artifactId">
-			<item value="javadevapi01"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -90,12 +89,14 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\gebruiker\eclipse-workspace\techproed"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\Lambda-master murat cakiroglu"/>
+			<item value="C:\Users\gebruiker\Desktop\JAVA\TESTERLIK\LAMBDA Murat cakiroglu\Lambda-master\Lambda-master"/>
 			<item value="C:\Users\gebruiker\Desktop\JAVA\JAVA SLIDES OT NOTES OF SULEYMAN ALPTEKIN\javadevapi01-main\javadevapi01-main"/>
 			<item value="https://github.com/salptekin/javadevapi01.git"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\apitodeploy"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\apiSecureToDeploy-main"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\RENTACAR_COMBINE-master"/>
-			<item value="C:\Users\gebruiker\eclipse-workspace\techproed"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\restapi\restapi"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\javadevapi01-main"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\techproedsummer2020turkish-master"/>

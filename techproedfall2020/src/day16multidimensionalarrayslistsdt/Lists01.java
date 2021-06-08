@@ -15,16 +15,23 @@ public class Lists01 {
 
 	public static void main(String[] args) {
 
-		//How to create a  list
+		//How to create a  list 3 ways
 	// 1. Way
+		//Lists can store JUST "non-primitive" data types
+		//ArrayList<int> lits11 = new ArrayList<int>(); ==> burada int degil Integer yani Wrapper kulanmank gerekiyor
+		
 	ArrayList<Integer> list1 = new ArrayList<>(); //Wrapper kullan burada
+	
 		
 	// 2. Way
-	ArrayList<Integer> list2 = new ArrayList<Integer>(); 
+	ArrayList<Integer> list2 = new ArrayList<Integer>();  //==>ArrayList ==> bu class name  ArrayList<>();==> bu constructor
 
 	// 3. Way. The best
 	// Note; Do not use "List<>" on the right, jAVA complains
 	List<Integer> list3 = new ArrayList<>(); 
+	
+	//how to print
+	System.out.println(list3);
 	
 	//How to add elements into a list
 	list3.add(11);
@@ -35,6 +42,7 @@ public class Lists01 {
 	System.out.println(list3); //11
 	
 	// How to find the number of elemnts in a list
+	//list3.size())--> List icin size() Array icin length kullaniyoruz.
 	
 	System.out.println("tHE number of element: " + list3.size()); // 5
 	

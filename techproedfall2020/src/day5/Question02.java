@@ -21,7 +21,7 @@ package day5;
 			String str = scan.nextLine();
 			
 			String [] arrayNames = str.split(" ");
-			System.out.println(Arrays.toString(arrayNames));
+			System.out.println(Arrays.toString(arrayNames)); //[john, Marry, william, Brian, Richard]
 			
 			for (int i = 0; i < arrayNames.length; i++) {
 				System.out.println(arrayNames[i].length());

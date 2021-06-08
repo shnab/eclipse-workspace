@@ -24,7 +24,7 @@ public class Question04 {
 				String [] arr = new String [list.size()];
 				list.toArray(arr);
 				for (String w : arr) {
-					System.out.print(w + " ");
+					System.out.print(w + " "); //Python JAVA PHP Perl C# C++ 
 					
 				}
 	}

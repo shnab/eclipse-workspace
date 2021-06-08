@@ -3,11 +3,11 @@ package day19varargsaccessmodifierdt;
 public class AccessModifiers01 {
 
 	/*
-	 1) if a class member is a private, it cab be seen, used. accessed just from inside the class
+	 1) if a class member is a private, it can be seen, used. accessed just from inside the class
 	 If you are in a different class, private class members cannot be seen, used, accessed.
 	
 	 2) If a class member is "Default", it cannot be seen, accessed, used from other packages // impossible
-	  DEFAULT and package private are synonims
+	  DEFAULT and "package private" are synonims
 	  
 	  3) if a class is public it can be accessed from everywhere, there is no any restriction
 	

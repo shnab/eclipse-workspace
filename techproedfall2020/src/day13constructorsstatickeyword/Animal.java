@@ -2,23 +2,23 @@ package day13constructorsstatickeyword;
 
 public class Animal {
 	
-	// behind the Animal class has a default class. When i create the that one Java calcels other
-	int age;
+	// behind the Animal class has a default contructor. When i create the that one Java calcels other
+	int age; //i didnt assign to any value
 	String name;
 	int weight;
 	boolean isCarnivorous;
 	
 	//bu ilk consructor herhangi bir parameter yok icinde 
-	public Animal() {
-		this("Cat", 25);
-		this.age = 5;
+		public Animal() {
+		this("Cat", 25); // constructor call her zaman ilk siraya yaziliyor.
+		this.age = 5; //without parameter but updating the age
 		System.out.println("Age from the consructor without parameter: " + age);
 	}
 	
-	//changing access modifier copleining 
+	//changing access modifier compleining protected yazsak da olmuyor. 
 	//This means in this class
 	public Animal(String name, int weight) {
-		//this(); //iki consrictor u ayni anda kullanmak icin. bu yukaridaki bos constructor u da kullaniyor.
+		//this(); //iki consrictor u ayni anda together kullanmak icin. bu yukaridaki bos constructor u da kullaniyor.
 		this(true);
 		this.name = name;
 		this.weight = weight; 
@@ -37,7 +37,9 @@ public class Animal {
 		//Create an object 
 		
 	//	Animal a1 = new Animal(); // bunu simdilik sildik. This () yaparak, iki consructor ayni  anda kullanilabiliyor. 
-		Animal a2 = new Animal();
+		Animal a2 = new Animal(); //Is the animal carnivorous: true
+								//Name and weight from the consructor with 2 parameters: Cat - 25
+								//Age from the consructor without parameter: 5
 		
 		
 

@@ -4,7 +4,7 @@ public class EnCapsulation01 {
 	
 	/*
 	 1) we use "encapsulation" to hide data and method implementations. 
-	 you should dome information
+	 you should some information
 	 2) "encapsulation" SHOLUD have following characteristics
 	  	a) Everyone knows how to access to the encapsulated data or method
 	  	b) It should be used easily even the code is complicated

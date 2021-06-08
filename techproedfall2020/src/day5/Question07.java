@@ -20,6 +20,7 @@ public class Question07 {
 		boolean lowercase = in.charAt(0)>='a' && in.charAt(0)<='z';
 		boolean vowel = in.equals("a") || in.equals("e") || in.equals("i") || in.equals("o") || in.equals("u");
 		
+		
 		if (in.length()>1) {
 			System.out.println("Choose a char please");
 		}

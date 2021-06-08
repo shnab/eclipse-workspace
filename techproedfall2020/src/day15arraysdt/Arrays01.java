@@ -7,24 +7,40 @@ public class Arrays01 {
 	public static void main(String[] args) {
 
 		//1. one will be int array whose length is 4
-		int a[] = new int[4];
-		a[0] = 11;
+		int a[] = new int[4]; //[0,0,0,0] ==> default
+		a[0] = 14;
 		a[1] = 12;
 		a[2] = 13;
-		a[3] = 14;
+		a[3] = 11;
+		System.out.println(Arrays.toString(a));
 		
+		//How to put ascending order
+		Arrays.sort(a);
+		System.out.println(Arrays.toString(a)); //[11, 12, 13, 14]
+		
+		//Type a program to add all elements in the array[a]
+		int x=0;
+		int sum=0;
+		while(x<a.length) {
+			sum =sum+a[x];
+			x++;
+		}
+		System.out.println("Sum : " + sum); //50
+			
 		//2. one will be char array whose length is 6
-		char b[] = {'a', 'b', 'c', 'd', 'e', 'f'};
+		char b[] = {'a', 'b', 'A', 'd', 'e', 'f'};
+		Arrays.sort(b);
+		System.out.println(Arrays.toString(b)); //[A, a, b, d, e, f]
 		
 		//How to find the number of elements in an array
 		//In Strings we were using length(), in Arrays we are using length. 
 		//No parenthesis for length in Arrays
-		System.out.println(a.length);
-		System.out.println(b.length);
+		System.out.println(a.length); //4
+		System.out.println(b.length); //6
 		
 		//Print all elements of array b on the console in reverse order.
 		for(int i=b.length-1; i>=0; i--) {
-			System.out.print(b[i] + " ");
+			System.out.print(b[i] + " "); //f e d c b a 
 		}
 		
 		System.out.println();
@@ -35,6 +51,15 @@ public class Arrays01 {
 				System.out.print(b[i] + " ");
 			}
 		}
+		
+		System.out.println();
+		
+		//For array b, concatenate all elements 
+		String concat= "";
+		for(int i=0; i<b.length; i++) {
+			concat = concat + b[i];
+		}
+		System.out.println("Concatenated " + concat); //Concatenated Aabdef
 		
 		System.out.println();
 		
@@ -55,6 +80,7 @@ public class Arrays01 {
 		//In Java, ascending order and alphabetical order are called "Natural Order"
 		Arrays.sort(c);
 		System.out.println(Arrays.toString(c));//[Ali, Brad, Clara, Kasim, Mary]
+	
 		
 		//binarySearch() is used to check if an element exists in an array or not.
 		//Before using binarySearch(), you HAVE TO use sort()
@@ -77,6 +103,22 @@ public class Arrays01 {
 		//binarySerach() method CANNOT be USED repeated elements. If you use 
 		// you will get some results but it is not meaningful
 		System.out.println(Arrays.binarySearch(d, "Adem")); //0
+		
+				//EXISTING //
+		int k[] = {3, 5, 2, 12, 4, 3, 6};
+		//check if 12 exists in the arrak "k"
+		Arrays.sort(k);
+		System.out.println(Arrays.toString(k)); //[2, 3, 3, 4, 5, 6, 12]
+		System.out.println(Arrays.binarySearch(k, 12)); //6
+		
+		//non-existance, negative signs displays
+		System.out.println(Arrays.binarySearch(k, 9)); //-7 ==> mevcut olsaydi 7. sirada olacakti
+		System.out.println(Arrays.binarySearch(k, 15)); //-8
+		
+		//binaryserach can not be used for repeated elements
+		System.out.println(Arrays.binarySearch(k, 3)); //1
+		
+		
 		
 		}
 	}

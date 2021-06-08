@@ -26,8 +26,8 @@ public class InterviewQuestion {
 				counter++;
 			} else {
 				System.out.println("The number of " + ch[i-1] + ": " + (counter + 1));
-				if(i==ch.length-1) {
-			System.out.println("The number of " + ch[i-1] + ": " + (counter +1));
+			 if(i==ch.length-1) {
+				 System.out.println("The number of " + ch[i] + ": " + (counter +1));
 			}
 				counter = 0;
 			}

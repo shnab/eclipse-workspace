@@ -18,7 +18,7 @@ public class Car {
 	 */
 	
 	//int price = 20000; //Bunlar henuz geen value. Asagi constructor yazinca (public Car() ) o zaman bunlar default olmasina ragmen artik default degiller
-	int price;
+	int price; //instance variables
 	String make;
 	String model;
 	int year;
@@ -33,11 +33,21 @@ public class Car {
 	}
 	
 	public Car(int price, String make, String model, int year) {
-		this.price = price; //bu parameter
+		this.price = price; //bu parameter ==> parameter ile yaptigimiz zaman this keyword kullanmaliyiz
 		this.make = make;
 		this.model = model;
 		this.year = year;
 		
+	}
+	
+	//Create a constructor which uses all variables
+	public Car(int price, String make, String model, int year, int milage, boolean isGas) {
+		this.price = price; 
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		this.milage = milage;
+		this.isGas = isGas;
 	}
 	
 	
@@ -45,6 +55,7 @@ public class Car {
 		Car car1 = new Car();
 		System.out.println(car1.price); //0 bunlar default degerler
 		System.out.println(car1.isGas); //false bunlar default degerler
+		
 		
 		Car car2 = new Car(2000, "Audi", "R8", 2018);
 		System.out.println(car2.price); //20000

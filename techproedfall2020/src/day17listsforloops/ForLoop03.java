@@ -17,6 +17,7 @@ public class ForLoop03 {
 		System.out.println("Enter a String to see number of vowels");
 		String s = scan.nextLine().toLowerCase();
 		
+
 		String ch[] = s.split("");
 		System.out.println(Arrays.toString(ch));
 		
@@ -25,6 +26,7 @@ public class ForLoop03 {
 		int iCount = 0;
 		int oCount = 0;
 		int uCount = 0;
+		int boslukCount =0; //bosluk sayiyor
 		
 		for(String w : ch) {
 			switch(w) {
@@ -43,6 +45,9 @@ public class ForLoop03 {
 				case "u":
 					uCount++;
 					break;
+				case " ":
+					boslukCount++;
+					break;
 			}
 		}
 		System.out.println("The number of a " + aCount);
@@ -50,6 +55,50 @@ public class ForLoop03 {
 		System.out.println("The number of i " + iCount);
 		System.out.println("The number of o " + oCount);
 		System.out.println("The number of u " + uCount);
+		System.out.println("The number of bosluk " + boslukCount);
+
 		
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("Enter a String to see number of vowels");
+//		String s = scan.nextLine().toLowerCase();
+//		
+//		String ch1[] = s.split("");
+//		System.out.println(Arrays.toString(ch1));
+//		
+//		int a =0;
+//		int i= 0;
+//		int o= 0;
+//		int e=0;
+//		int u=0;
+//		
+//		for(String w: ch1) {
+//			switch(w) {
+//			case "a":
+//				a++;
+//				break;			
+//			case "i":
+//				i++;
+//				break;
+//			case "o":
+//				o++;
+//				break;			
+//			case "e":
+//				e++;
+//				break;					
+//			case "u":
+//				u++;
+//				break;			
+//			}
+//			System.out.print(w + " ");
+//		}
+//		System.out.println();
+//		
+//		System.out.println("The number of a " + a);
+//		System.out.println("The number of i " + i);
+//		System.out.println("The number of o " + o);
+//		System.out.println("The number of e " + e);
+//		System.out.println("The number of u " + u);
+		
+		scan.close();
 	}
 }

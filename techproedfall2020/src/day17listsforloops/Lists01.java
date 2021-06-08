@@ -12,7 +12,7 @@ public class Lists01 {
 		list1.add("Ali");
 		list1.add("Veli");
 		list1.add("Mary");
-		list1.add(1, "Angie");
+		list1.add(1, "Angie"); //index ile add
 		list1.add("Veli");
 		System.out.println(list1);
 		
@@ -113,7 +113,7 @@ public class Lists01 {
 		list3.add("John");
 		System.out.println(list3); //[X, Ali, Jack]
 				
-		// ir you want to check if multiple elements exist in a list
+		// if you want to check if multiple elements exist in a list
 		//Put the elements int a list then use containsAll();
 		System.out.println(list1.containsAll(list3));		//true
 		

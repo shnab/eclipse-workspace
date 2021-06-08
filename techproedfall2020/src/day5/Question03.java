@@ -25,7 +25,7 @@ public class Question03 {
     			countPositives++;
     		}
     }
-    	int [] totalCount = {countPositives,sumNegatives};
+    	int [] totalCount = {countPositives,sumNegatives}; //[10, -65]
     	return totalCount;
 	}
 

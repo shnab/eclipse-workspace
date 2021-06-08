@@ -45,28 +45,34 @@ public class MultiDimensionalArrays01 {
 		for(int i=0; i<maa.length; i++) {
 			
 			for (int k=0; k<maa[i].length; k++) {
-				System.out.print("*" + maa[i][k]);
+				System.out.print("*" + maa[i][k]); //*1*3*4*5*6*7
 			}
 		}
 		
 		System.out.println();
 		
 		//How to find the product of all elements in the array "maa"
-		
-		int product = 1; // for aadition begin with 1
+
+		int product = 1; // for addition begin with 1
 		for(int i=0; i<maa.length; i++) {
 			for(int k=0; k<maa[i].length; k++) {
 				product = product * maa[i][k];
 			}
 		}
-		System.out.println("The product of all elements: " + product);
+		System.out.println("The product of all elements: " + product); //The product of all elements: 2520
 		
 		// How to find the sum of all elements (Homework)
 		
+		int sum = 0; // for sum begin with 0
+		for(int i=0; i<maa.length; i++) {
+			for(int k=0; k<maa[i].length; k++) {
+				sum = sum + maa[i][k];
+			}
+		}
+		System.out.println("The sum of all elements: " + sum); //The sum of all elements: 26
+		
 
-		
-		
-		/*
+		//yeni bi array yaz otomatik
 		int count=1;
 			for(int i=0;i<3;i++) {
 			for(int k=0;k<2;k++) {
@@ -74,9 +80,9 @@ public class MultiDimensionalArrays01 {
 				count++;
 			}
 		}
-		System.out.println(Arrays.deepToString(ma));
+		System.out.println(Arrays.deepToString(ma)); //[[1, 2], [3, 4], [5, 6]]
 	
-		 */
+		 
 	}
 
 }

@@ -14,7 +14,7 @@ package day28interface;
 	 5) When you work in a class, if you remove access modifier it will be "default"
 	 	but when you work in an interface access modifiers of all methods will be public 
 	 	everYtime even you type access modifier or not
-	 	"public void seat(); " is same with "void seat ();"
+	 	==> "public void seat(); " is same with "void seat ();"
 	 6) For concrete and abstract classes we use "extends" keyword but for interfaces we use 
 	 	"implements" keyword. Both "extends " and "implements " can be used at the same time for a class 
 	 	to achieve multiple inheritance

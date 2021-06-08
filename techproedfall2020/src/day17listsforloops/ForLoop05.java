@@ -22,14 +22,15 @@ public class ForLoop05 {
 		
 		List<String> nonRepeatedList = new ArrayList<>();
 		
+
 		//1.Way:
 		for(String w : list) {
-			if(nonRepeatedList.contains(w)) {
-				continue;
+			if(nonRepeatedList.contains(w)) { 
+				continue; // if contains, skip it, dont do anything, otherwise add it
 			}
 			nonRepeatedList.add(w);
 		}
-		System.out.println(nonRepeatedList);
+		System.out.println(nonRepeatedList); // [a, b, c, d] tekrar edenler atildi
 		
 		//2.Way:
 		for(String w : list) {
@@ -39,6 +40,16 @@ public class ForLoop05 {
 		}
 		System.out.println(nonRepeatedList);
 
+		
+		List<String> nonRepeatedList1 = new ArrayList<>();
+		for(String w: list) {
+			if(nonRepeatedList1.contains(w)) { 
+				break; //a, b, c ==> bu kod sadece tekrar edenleri aldi d yi almadi
+			}
+			nonRepeatedList1.add(w);
+		}
+		
+		System.out.println(nonRepeatedList1);
 	}
 
 }

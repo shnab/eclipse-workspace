@@ -16,11 +16,16 @@ public class Consructors01 {
 	 6) When you create any constructor inside the class, java cancels default constructor.
 	 */
 	
-	//Public is Accces modifier
+	//Public is Accces modifier ==> constructor mai disina buraya yaziliyor. bunu yazinca default olan iptal oldu
 	public Consructors01() {
-		System.out.println("The constructor i created");
+		System.out.println("The constructor i created without parameter");
 		
 	}
+	//Acces modifier protected da olabilir
+//	protected Consructors01() {
+//		System.out.println("The constructor i created");
+//		
+//	}
 	
 	public Consructors01(int i) {
 		System.out.println("I used the constructor with parameters");
@@ -33,12 +38,17 @@ public class Consructors01 {
 	
 	public static void main(String[] args) {
 
-//Class name   object name       keywoord     Consructors
+//Class name   object name       keywoord       Consructors
 //	Scanner       scan        =    new          Scanner(System.in);
-	
-	Consructors01 obj1 = new Consructors01(); //default one. 
+		
+//Class name   object name   keywoord       Consructors
+	Consructors01 obj1 =     new             Consructors01(); //default one. 
 	Consructors01 obj2 = new Consructors01(5); //second Consructors01 i kullanacak
 	Consructors01 obj3 = new Consructors01("Java", 8.0);
+	
+	
+	
+	
 	}
 
 }

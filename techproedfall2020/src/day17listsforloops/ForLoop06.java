@@ -13,19 +13,30 @@ public class ForLoop06 {
 		 							  [3, 3, 3]
 		 							  [3, 3, 3]
 		 */
-
 		Scanner scan = new Scanner(System.in);
 		System.out.println("ERnter an integer");
 		int length = scan.nextInt();
 		
+				
+		//burada normal forloop kullanacqaz cunku elemizde degerleri olan bir array veya list yok
 		int arr[][] = new int[length][length];
 		for(int i=0; i<length; i++) {
 			for(int k=0; k<length; k++) {
+				
 				arr[i][k] = length;
 			}
 		}
 		System.out.println(Arrays.deepToString(arr));
 
+		//benimki
+		int arr1[][]= new int [length][length];
+		for(int i=0; i<length; i++) {
+			for(int k =0; k<length; k++) {
+				arr1[i][k]= length;
+			}
+		}
+		
+		System.out.println(Arrays.deepToString(arr1));
 	}
 
 }

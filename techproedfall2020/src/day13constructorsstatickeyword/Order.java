@@ -1,6 +1,6 @@
 package day13constructorsstatickeyword;
 
-public class Animal {
+public class Order {
 
 		int age = 7;
 
@@ -8,13 +8,13 @@ public class Animal {
 
 		boolean mammal; 
 
-		Animal(){
+		Order(){
 
 			System.out.println("Good");
 
 		}	
 
-		Animal(boolean mammal){
+		Order(boolean mammal){
 
 			this();
 
@@ -24,12 +24,11 @@ public class Animal {
 
 	     public static void main(String[] args) {
 
-			Animal a1 = new Animal(true);
+			Order a1 = new Order(true);
+			//a1 = new Order();
 
 		}
 
-	}
 
-	}
 
 }

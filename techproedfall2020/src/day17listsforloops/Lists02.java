@@ -14,14 +14,15 @@ public class Lists02 {
 		String s[] = {"A", "C", "M", "B"};
 		
 		//To convert an array to a list use asList() method from Arrays Class
-		List<String> ls = Arrays.asList(s); // new yazarak object olustulur aslinda. If youn are converting dont use new word
+		List<String> ls = Arrays.asList(s); // new yazarak object olustulur aslinda. If you are converting, dont use new word
 
 		System.out.println(ls.size());
 		
-		ls.set(1, "CX");
+		ls.set(1, "CX"); //updating an element kan dat
 		System.out.println(ls); //[A, CX, M, B]
 		
-		//If you create a list from an array by using asList method, you cannot use the methods which affects the size from ArrayList Class
+		//If you create a list from an array by using asList method, you cannot use 
+		//the methods which affects the size from ArrayList Class
 		//ls.remove(1);
 		//ls.add("K");
 		//ls.clear();
@@ -29,17 +30,18 @@ public class Lists02 {
 		//If you want to be able to use all methods, do not use asList to convert 
 		//Use loops to transfer elemets to a new list
 		
-		List<String> nls = new ArrayList<>(); // Bu list
+		List<String> nls = new ArrayList<>(); // Burada array elemanlarini for loop ile by one by listeye eklemis olduk
 		for(int i=0; i<s.length; i++) {
 			nls.add(s[i]);
 		}
+		//nls.addAll(ls); boyle de eklenebilir ama uzun yol. For  loop daha iyi
 		System.out.println(nls);
 		
 		nls.remove(1);
 		System.out.println(nls); // [A, M, B]
 		
 		//How to convert a list to an array toArray method
-		String arrayFromList[] = nls.toArray(new String[0]);
+		String arrayFromList[] = nls.toArray(new String[0]); //her zaman new String[0] yahzilir
 		System.out.println(Arrays.toString(arrayFromList)); //[A, M, B] this a ARRAY
 		
 		

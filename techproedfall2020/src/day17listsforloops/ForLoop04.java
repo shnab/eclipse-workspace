@@ -28,18 +28,32 @@ public class ForLoop04 {
 		list2.add(17);
 		System.out.println(list2);
 		
+	
 		List<Integer> common = new ArrayList<>();
 		
 		for(Integer w : list1) {	
 			for(Integer t : list2) {
 				if(w == t) {
-					if(!common.contains(w)) {
+					if(!common.contains(w)) { //eger burada if koymazsak [11, 14, 14, 15] seklinde sonuc cikar. 14 u iki defa yazdirir
 						common.add(w);
 					}
 				}
 			}
 		}
-		System.out.println(common);
+		System.out.println(common); //[11, 14, 15]
+		
+		//benimki 
+		List<Integer> common1 = new ArrayList<>();
+		
+		for(Integer w: list1) {
+			for(Integer t: list2) {
+				if(w==t) {
+					common1.add(w); // eger burada if koymazsak [11, 14, 14, 15] seklinde sonuc cikar. 14 u iki defa yazdirir
+				}
+			}
+		}
+		
+		System.out.println(common1); //[11, 14, 14, 15]
 
 
 	}
