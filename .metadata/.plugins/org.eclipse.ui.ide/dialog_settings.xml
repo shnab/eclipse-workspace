@@ -67,6 +67,9 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\gebruiker\eclipse-workspace\techproedsummer2020turkish2-master"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\techproedfall2020-master"/>
+			<item value="C:\Users\gebruiker\eclipse-workspace\winter2021Turkish-master"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\javadevapi01-main"/>
 			<item value="C:\Users\gebruiker\eclipse-workspace\techproedsummer2020turkish-master"/>
 		</list>

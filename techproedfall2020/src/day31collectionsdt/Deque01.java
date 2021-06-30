@@ -57,8 +57,7 @@ public class Deque01 {
 		System.out.println(dq1);//[Metin, Joe, Mary, Angie]
 		
 		System.out.println(dq1.removeLast());//Angie
-		System.out.println(dq1);//[Metin, Joe, Mary]
-		
+		System.out.println(dq1);//[Metin, Joe, Mary]		
 		/*
 		 removeFirst() and pollFirst() returns the first element and removes it.
 		 If the Deque is empty removeFirst() throws "NoSuchElementException"
@@ -69,8 +68,7 @@ public class Deque01 {
 		 removeLast() and pollLast() returns the first element and removes it.
 		 If the Deque is empty removeLast() throws "NoSuchElementException"
 		 If the Deque is empty pollLast() returns "null"
-		*/
-		
+		*/		
 		dq1.clear();
 		System.out.println(dq1);//[]
 		
