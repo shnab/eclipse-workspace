@@ -191,14 +191,14 @@ public class RoomReservationPage  {
     public List<WebElement> satirlarListesi;
 
 
-    //her seferinde login ile ugrasmamak icin bu metodu yazdik
-    public void koalaResortLogin(){
-        Driver.getDriver().get(ConfigReader.getProperty("kr_url"));
-        firstLoginLink.click();
-        username.sendKeys(ConfigReader.getProperty("kr_valid_username"));
-        password.sendKeys(ConfigReader.getProperty("kr_valid_password"));
-        loginButonu.click();
-    }
+//    //her seferinde login ile ugrasmamak icin bu metodu yazdik
+//    public void koalaResortLogin(){
+//        Driver.getDriver().get(ConfigReader.getProperty("kr_url"));
+//        firstLoginLink.click();
+//        username.sendKeys(ConfigReader.getProperty("kr_valid_username"));
+//        password.sendKeys(ConfigReader.getProperty("kr_valid_password"));
+//        loginButonu.click();
+//    }
 
 }
 

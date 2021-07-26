@@ -1,4 +1,4 @@
-package com.techproed.tests;
-
-public class LoginPozitif_Ahmet {
-}
+//package com.techproed.tests;
+//
+//public class LoginPozitif_Ahmet {
+//}

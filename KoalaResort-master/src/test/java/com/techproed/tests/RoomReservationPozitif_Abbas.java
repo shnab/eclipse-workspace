@@ -4,10 +4,14 @@ package com.techproed.tests;
 
 import com.techproed.pages.DefaultPage;
 import com.techproed.pages.LoginPage;
+import com.techproed.pages.MainPage;
 import com.techproed.pages.RoomReservationPage;
 import com.techproed.utilities.*;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -15,24 +19,26 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class RoomReservationPozitif_Abbas extends TestBase {
+public class RoomReservationPozitif_Abbas  {
 
     RoomReservationPage roomReservationPage;
     DefaultPage defaultPage;
     LoginPage loginPage;
+    MainPage mainPage = new MainPage();
 
 
-    @BeforeMethod
-    public void defaultLogin(){
-        loginPage= new LoginPage();
-        loginPage.koalaResortLogin();
-
-        defaultPage =new DefaultPage();
-        defaultPage.hotelManagement.click();
-        defaultPage.roomReservations.click();
-        roomReservationPage = new RoomReservationPage(driver);
-        roomReservationPage.addRoomReservationButton.click();
-    }
+//    @BeforeMethod
+//    public void defaultLogin(){
+//
+//        loginPage= new LoginPage();
+//        loginPage.koalaResortLogin();
+//
+//        defaultPage =new DefaultPage();
+//        defaultPage.hotelManagement.click();
+//        defaultPage.roomReservations.click();
+//        roomReservationPage = new RoomReservationPage(driver);
+//        roomReservationPage.addRoomReservationButton.click();
+//    }
 
     @Test
     public void positieveRoomReservationCreate() throws InterruptedException {
@@ -45,6 +51,19 @@ public class RoomReservationPozitif_Abbas extends TestBase {
 //
 //        roomReservationPage = new RoomReservationPage(driver);
 //        roomReservationPage.addRoomReservationButton.click();
+
+        WebDriver driver;
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        ChromeOptions option = new ChromeOptions();
+        option.addArguments("headless");
+        option.addArguments("disable-gpu");
+        driver = new ChromeDriver(option);
+        driver.get(ConfigReader.getProperty("kr_url"));
+        mainPage.mainPageLoginLink.click();
+        loginPage= new LoginPage();
+        loginPage.username.sendKeys(ConfigReader.getProperty("kr_valid_username"));
+        loginPage.password.sendKeys(ConfigReader.getProperty("kr_valid_password"));
+        loginPage.loginButton.click();
 
         //1. asama ==>
        WebElement dropDownMenu = roomReservationPage.idUser;
@@ -108,7 +127,7 @@ public class RoomReservationPozitif_Abbas extends TestBase {
 
         //Ok button click
         //explicit wait
-        ReusableMethods.waitForVisibility(roomReservationPage.actualSuccessMessage,5 );
+       // ReusableMethods.waitForVisibility(roomReservationPage.actualSuccessMessage,5 );
         roomReservationPage.okSuccesButton.click();
 
         //remove buton click with JSExecutor
@@ -138,8 +157,8 @@ public class RoomReservationPozitif_Abbas extends TestBase {
         //remove buton click with JSExecutor
         //Some elements may not be visible or cannot be easily clicked using selenium click() method
         WebElement clickRemoveButton= roomReservationPage.removeButtonRoomReservationPage;
-        ReusableMethods.waitForVisibility(clickRemoveButton,5 );
-        JSUtils.clickElementByJS(clickRemoveButton);
+        //ReusableMethods.waitForVisibility(clickRemoveButton,5 );
+       // JSUtils.clickElementByJS(clickRemoveButton);
         //Assert.assertFalse(roomReservationPage.saveButton.isDisplayed());
 
     }
