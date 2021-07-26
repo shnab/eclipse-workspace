@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" >
+    <test name="Positive Login Test" >
+        <classes>
+            <class name="com.techproed.smoketest.KoalaResortPositifTest" />
+            <class name="com.techproed.tests.RoomReservationPozitif_Abbas" />
+        </classes>
+    </test>
+
+    <test name="Negative Login Test">
+        <classes>
+            <class name="com.techproed.smoketest.KoalaResortNegatifTest"/>
+        </classes>
+    </test>
+
+    <test name="Hotel Room Creating">
+        <classes>
+            <class name="com.techproed.tests.HotelRoomCreationNegatif_Sibel"/>
+        </classes>
+    </test>
+</suite>
